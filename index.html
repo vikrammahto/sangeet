@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet - Suno Sunao | Music Desktop UI</title>
+    <meta name="description" content="Sangeet - Music Desktop UI design using HTML, CSS and JavaScript">
+    <meta name="author" content="Vikram Mahto">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <script src="https://kit.fontawesome.com/bf0298c4da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lib/flickity/flickity.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <header class="top-nav">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <a href="#" class="nav-logo">Sangeet</a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Podcast</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Live</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Radio</a>
+                </li>
+            </ul>
+            <div class="header-user">
+                <form action="">
+                    <input type="text" placeholder="Search song, artist, playlist" class="search-box">
+                </form>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-bell"></i>
+                <div class="user" title="View me on GitHub" id="user-vikram">
+                    <img src="src/img/avatar.jpg" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <aside class="left-sidebar">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-star"></i>Top</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-compact-disc"></i>Album</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-user"></i>Artist</a>
+                    </li>
+                    <li class="menu-divider">
+                        <small>Discover</small>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-arrow-trend-up"></i>Trending in India</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-user-group"></i>Popular artists</a>
+                    </li>
+                    <li class="menu-divider">
+                        <small>Collection</small>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-heart"></i>Favorite songs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-heart"></i>Romantic</a>
+                    </li>
+                    <li class="menu-divider">
+                        <small>General</small>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-gear"></i>Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-circle-question"></i>Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="page-wrapper">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
+                <img src="src/img/slider-1.webp" alt="" class="gallery-cell">
+                <img src="src/img/slider-2.webp" alt="" class="gallery-cell">
+                <img src="src/img/slider-3.webp" alt="" class="gallery-cell">
+            </div>
+            <div class="popular-album">
+                <div class="section-info">
+                    <h3 class="section-title">Popular</h3>
+                    <a href="" class="section-sub-title">See more</a>
+                </div>
+                <div class="popular-album-row">
+                    <div class="music-card">
+                        <div class="album-cover">
+                            <img src="src/img/jubin.png" alt="music-thumb" class="music-thumb">
+                        </div>
+                        <a href="" class="title" title="Romantic hits by Jubin Nautiyal">Romantic hits by jubin
+                            nautiyal</a>
+                        <h5 class="sub-title">jubin nautiyal</h5>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover">
+                            <img src="src/img/Pushpa.webp" alt="music-thumb" class="music-thumb">
+                        </div>
+                        <a href="" class="title" title="Pushpa The Rise Part - 1">pushpa the rise part - 1</a>
+                        <h5 class="sub-title">devi sri prasad</h5>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover">
+                            <img src="src/img/Shershaah.webp" alt="music-thumb" class="music-thumb">
+                        </div>
+                        <a href="" class="title" title="Shershaah">Shershaah</a>
+                        <h5 class="sub-title">tanishk bagchi</h5>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover">
+                            <img src="src/img/mast-najro-se.webp" alt="music-thumb" class="music-thumb">
+                        </div>
+                        <a href="" class="title" title="Mast Najron Se">Mast Najron Se</a>
+                        <h5 class="sub-title">jubin nautiyal</h5>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover">
+                            <img src="src/img/excuse.webp" alt="music-thumb" class="music-thumb">
+                        </div>
+                        <a href="" class="title">Excuse</a>
+                        <h5 class="sub-title">AP Dhillon</h5>
+                    </div>
+                    <div class="music-card">
+                        <div class="album-cover">
+                            <img src="src/img/meh.webp" alt="music-thumb" class="music-thumb">
+                        </div>
+                        <a href="" class="title">Mehrama</a>
+                        <h5 class="sub-title">Pritam</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="weekly-top-10">
+                <div class="section-info">
+                    <h3 class="section-title">Weekly Top 10</h3>
+                    <a href="" class="section-sub-title">See more</a>
+                </div>
+                <div class="list-items">
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">01</h1>
+                            <img src="src/img/excuse.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Excuse</h3>
+                                <h5 class="artist">AP Dhillon</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">02</h1>
+                            <img src="src/img/meh.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Mehrama</h3>
+                                <h5 class="artist">Pritam</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">03</h1>
+                            <img src="src/img/mast-najro-se.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Mast Najron Se</h3>
+                                <h5 class="artist">Jubin Nautiyal</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">04</h1>
+                            <img src="src/img/Shershaah.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Shershaah</h3>
+                                <h5 class="artist">Tanishk Bagchi</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">05</h1>
+                            <img src="src/img/Pushpa.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Pushpa The Rise</h3>
+                                <h5 class="artist">Devi Sri Prasad</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">06</h1>
+                            <img src="src/img/udd.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Ud Ja Kale Kawaan</h3>
+                                <h5 class="artist">Amandeep Singh</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">07</h1>
+                            <img src="src/img/agent-vinod.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Raabta</h3>
+                                <h5 class="artist">Arijit Singh</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">08</h1>
+                            <img src="src/img/kesri.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Kesari</h3>
+                                <h5 class="artist">Tanishk Bagchi</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">09</h1>
+                            <img src="src/img/love.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Love Aaj Kal</h3>
+                                <h5 class="artist">Pritam</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                    <div class="music-list">
+                        <div class="info">
+                            <h1 class="song-number">10</h1>
+                            <img src="src/img/half.webp" class="song-circular-thumb"></img>
+                            <div class="song-name-info">
+                                <h3 class="song-name">Half Girlfriend</h3>
+                                <h5 class="artist">Tanishk Bagchi</h5>
+                            </div>
+                        </div>
+                        <div class="more-dots">...</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="section-info">
+                <h3 class="section-title">Recently played</h3>
+                <a href="" class="section-sub-title">View history</a>
+            </div>
+            <div class="sidebar-music-list">
+                <div class="info">
+                    <img src="src/img/excuse.webp" class="song-rounded-thumb"></img>
+                    <div class="song-name-info">
+                        <h3 class="song-name">Excuse</h3>
+                        <h5 class="artist">AP Dhillon</h5>
+                    </div>
+                </div>
+                <div class="duration muted">3:40</div>
+            </div>
+            <div class="sidebar-music-list">
+                <div class="info">
+                    <img src="src/img/udd.webp" class="song-rounded-thumb"></img>
+                    <div class="song-name-info">
+                        <h3 class="song-name">Ud Ja Kale Kawaan</h3>
+                        <h5 class="artist">Amandeep Singh</h5>
+                    </div>
+                </div>
+                <div class="duration muted">3:00</div>
+            </div>
+            <div class="sidebar-music-list">
+                <div class="info">
+                    <img src="src/img/meh.webp" class="song-rounded-thumb"></img>
+                    <div class="song-name-info">
+                        <h3 class="song-name">Mehrama</h3>
+                        <h5 class="artist">Pritam</h5>
+                    </div>
+                </div>
+                <div class="duration muted">4:00</div>
+            </div>
+            <div class="sidebar-music-list">
+                <div class="info">
+                    <img src="src/img/mast-najro-se.webp" class="song-rounded-thumb"></img>
+                    <div class="song-name-info">
+                        <h3 class="song-name">Mast Najron Se</h3>
+                        <h5 class="artist">Jubin Nautiyal</h5>
+                    </div>
+                </div>
+                <div class="duration muted">3:40</div>
+            </div>
+            <div class="sidebar-music-list">
+                <div class="info">
+                    <img src="src/img/Shershaah.webp" class="song-rounded-thumb"></img>
+                    <div class="song-name-info">
+                        <h3 class="song-name">Shershaah</h3>
+                        <h5 class="artist">Tanishk</h5>
+                    </div>
+                </div>
+                <div class="duration muted">3:40</div>
+            </div>
+            <div class="section-info" id="popular-artists">
+                <h3 class="section-title">Popular artists</h3>
+                <a href="" class="section-sub-title">See more</a>
+            </div>
+            <div class="artist-group">
+                <div class="artist-avatar">
+                    <img src="src/img/pritam.webp" alt="">
+                    <span>Pritam</span>
+                </div>
+                <div class="artist-avatar">
+                    <img src="src/img/mohit.webp" alt="">
+                    <span>Mohit Chauhan</span>
+                </div>
+                <div class="artist-avatar">
+                    <img src="src/img/neha.webp" alt="">
+                    <span>Neha Kakkar</span>
+                </div>
+                <div class="artist-avatar">
+                    <img src="src/img/jubin-av.webp" alt="">
+                    <span>Jubin Nautiyal</span>
+                </div>
+                <div class="artist-avatar">
+                    <img src="src/img/b.webp" alt="">
+                    <span>B Parak</span>
+                </div>
+                <div class="artist-avatar">
+                    <img src="src/img/avatar.jpg" alt="">
+                    <span>Vikram Mahto</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="player d-none" id="player">
+        <div class="container">
+            <div class="playing-info">
+                <img src="src/img/avatar.jpg" class="song-rounded-thumb"></img>
+                <div class="song-name-info">
+                    <h3 class="song-name">It's My Life</h3>
+                    <audio src="src/music/bon-jovi-its-my-life.mp3" id="audio"></audio>
+                    <h5 class="artist">Unknown</h5>
+                </div>
+            </div>
+            <div class="player-control">
+                <div id="prev"><i class="fa-solid fa-backward-step m-0"></i></div>
+                <div id="play"><i class="fa-solid fa-pause m-0" id="playStatusIcon"></i></div>
+                <div id="next"><i class="fa-solid fa-forward-step m-0"></i></div>
+            </div>
+            <div class="extra">
+                <div id="volume"><i class="fa-solid fa-volume-high"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/flickity/flickity.pkgd.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>
